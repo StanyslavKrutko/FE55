@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form with Post запрос</title>
+</head>
+
+<body>
+    <form action="/action_page.php" target="_blank" method="post">
+        <fieldset>
+            <legend>Форма с Post запросом</legend>
+            <p><input type="text" name="name" required placeholder="name*" maxlength="15" /></p>
+            <input type="tel" name="tel" required placeholder="Номер телефона" maxlength="15" /><br>
+            <p><input type="email" name="email" placeholder="E-mail*" maxlength="15" /></p>
+            <textarea name="textarea" rows="5" cols="22" maxlength=""></textarea> <br>
+            <p><input type="date" name="day" max="2019-10-13" /> Дата посещения</p>
+            <button type="button" onClick="alert('Садись. Пять');">Отправить</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

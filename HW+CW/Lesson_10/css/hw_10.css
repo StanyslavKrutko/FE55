@@ -1,0 +1,66 @@
+
+
+.main {
+    padding: 15px;
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    background-image:url(/homework/Lesson_10/img/css.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.first{
+    width: 50%;
+    }
+h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.first p{
+    text-transform: lowercase;
+    text-indent: 20px;
+}
+
+.second{
+    width: 50%;
+   }
+
+.second input, textarea{
+    width: 100%;
+}
+
+
+/*
+.main {
+    padding: 15px;
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    background-image: url(/homework/Lesson_10/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.first{
+    width: 50%;
+    }
+h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.first p{
+    text-transform: lowercase;
+    text-indent: 20px;
+}
+
+.second{
+    width: 50%;
+   }
+
+.second input, textarea{
+    width: 100%;
+}*/

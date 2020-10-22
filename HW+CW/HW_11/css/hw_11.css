@@ -1,0 +1,44 @@
+
+/*
+
+font-family: 'robotoblack';
+font-family: 'robotobold';
+font-family: 'robotocondensed';
+font-family: 'robotolight';
+font-family: 'robotoitalic';
+font-family: 'robotolight_italic';
+font-family: 'robotomedium';
+font-family: 'robotoregular';
+font-family: 'robotothin';
+
+*/
+
+.fon {
+    padding: 40px 0px;
+    width: 100%;
+    background-image:url(/HW+CW/HW_11/img/bg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fon h2{
+    font-family: 'robotothin';
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.fon p{
+    font-size: 17px;
+    font-style: italic;
+}
+
+
+
+ul.style-image {
+    list-style-image:url(/HW+CW/HW_11/img/arrow4.png);
+    list-style-position:inside;
+}
+

@@ -22,7 +22,7 @@ h2{
     padding-bottom: 50px;
 }
 .shadow3{
-    text-shadow: 20px 20px 3px red, -20px -20px 3px blue;
+    text-shadow: 10px 10px 3px rgba(255, 0, 0, 0.58), -10px -10px 3px rgba(0, 0, 255, 0.51);
     margin-bottom: 50px;
     margin-left: 22px;
     

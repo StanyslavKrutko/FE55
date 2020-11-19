@@ -1,0 +1,121 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        /*    width: 1170px;*/
+        margin: 0 auto;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .logo-site {
+        max-width: 85px;
+        width: auto;
+        height: auto;
+        float: left;
+        margin-left: 75px;
+        border-radius: 100%;
+        margin-top: 3px;
+
+    }
+
+
+    .header {
+        margin-top: 15px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        background: #5050e0;
+        top: 0px;
+    }
+
+    ul.menu-main > li.item-menu {
+        list-style: none;
+        float: right;
+        margin-top: 7px;
+        margin-right: 50px
+    }
+
+    ul.menu-main > li.item-menu > a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 14px;
+        padding: 20px 15px;
+        display: block;
+    }
+
+    ul.menu-main > li.item-menu > a:hover {
+        color: aqua;
+    }
+
+
+    .flex-container-justify-content {
+        display: flex;
+        justify-content: space-around;
+        background-color: #ffdada;
+        margin-bottom: 40px;
+        width: 100%;
+        height: 600px;
+    }
+
+
+    .flex-container-justify-content .block1 {
+        text-align: center;
+/*        order: 1;*/
+    }
+
+    .flex-container-justify-content .block1 h2 {
+        margin-top: 150px;
+        font-size: 150px;
+        color: #4848c4;
+        text-shadow: 6px 9px 13px black;
+
+    }
+
+    .flex-container-justify-content .block1 .text {
+        font-size: 30px;
+        color: #216c6c;
+    }
+
+
+    .block2 img {
+        left: 0;
+        margin-top: 100px;
+        min-height: 300px;
+        max-width: 400px;
+        
+    }
+
+    .block1 .btn {
+        display: block;
+        text-align: center;
+        width: 150px;
+        margin: 30px auto;
+        box-sizing: border-box;
+        background: #aaaaaa;
+        color: #585800;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        color: #241167;
+        box-shadow: 4px 6px 9px 0px #425a69;
+        transition:linear  0.3s;
+        border: 1px solid #7e83b5;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .block1 .btn:hover {
+        background: #3773c6;
+        color: #ffffff;
+        box-shadow: 3px 3px 5px 1px #303b42;
+    }

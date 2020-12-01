@@ -17,6 +17,16 @@ body{
     font-family: 'vidaloka_regular';
 }
 
+.h1, .h2 .h3, .h4 .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height:normal !important; /*принудительно для этих элементов делаем*/
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 /*header*/
 
 /*z-index используем, что бы хедер был на баннере
@@ -72,9 +82,9 @@ body{
 /*чтобы засунуть баннер под хедер, блоку баннера даём отрицательное значение топ*/
 
 .banner-home {
-    position: relative;
+    position: absolute;
     left: 0;
-    top: -127px;
+    top: 0;
     z-index: 1;
     background: url(../pic/baner_home.jpg) no-repeat;
     background-size: cover;
@@ -132,7 +142,7 @@ body{
     color: #fff;
     font-family: 'back_to_black_demoregular';
     text-align: center;
-    margin-top: -35px;
+    margin-top: -72px;
 }
 
 .banner-home .owl-carousel button .owl-prev{

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forma</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="/action_page.php" target="_blank" method="post">
+
+        <p><input class="name" type="text" name="name" required placeholder="имя*" maxlength="20" /> </p>
+        <p><input type="tel" name="tel" required placeholder="Номер телефона" maxlength="13" /></p>
+
+
+        <script>
+            document.write('<style>input{background:#e5ff76; color:#000fbe; font-weight: 600; padding: 5px; border-radius: 10px; outline: none;}</style>');
+
+
+            let name = document.querySelector('.name');
+            name.placeholder = 'Ваше имя*';
+        </script>
+
+
+    </form>
+
+</body>
+
+</html>

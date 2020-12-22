@@ -1,0 +1,911 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+   font-size: 14px;
+    color: #000;
+    font-family: 'vidaloka_regular';
+}
+
+/*
+.h1, .h2 .h3, .h4 .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height:normal !important; принудительно для этих элементов делаем
+}
+*/
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/*header*/
+
+/*z-index используем, что бы хедер был на баннере
+и чтобы засунуть баннер под хедер, блоку баннера даём отрицательное значение топ
+*/
+
+.header{
+    z-index: 2;
+    position: relative;
+    padding-top: 60px;
+}
+
+.nav-menu ul li a{
+    transition: 0.3s;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+.nav-menu ul li{
+    margin-right: 44px;
+}
+
+.nav-menu ul li:last-child{
+    margin-right: 0px;
+}
+
+
+.nav-menu ul li.active a,
+.nav-menu ul li a:hover{
+    text-decoration: none;
+    padding-bottom: 35px;
+    color: #ffeb3b;
+    border-bottom: solid 2px #ffeb3b;
+    
+}
+
+.border-header{
+    border-bottom: solid 1px #a29a98;
+}
+
+
+/*header*/
+
+.nav-menu .navbar-toggler,
+.nav-menu .navbar-brand {
+    display: none;
+}
+
+/*banner-home*/
+
+/*чтобы засунуть баннер под хедер, блоку баннера даём отрицательное значение топ*/
+
+.banner-home {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: url(../pic/baner_home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+#slider-baner {
+    padding-top: 300px;
+}
+
+.btn-search {
+    font-size: 0;
+    background: url(../pic/search.png) no-repeat;
+    width: 43px;
+    height: 37px;
+    border: inherit;
+    outline: none;
+}
+
+.pole-search {
+    display: none;
+    outline: none;
+}
+
+.form-search{
+    position: relative;
+    padding-left: 15px;
+    padding-top: 4px;
+}
+.form-search:before{
+/*
+    content:'';
+    position: absolute;    обязательные условия для псевдо бефо и афте!!!
+*/
+    
+    content:'';
+    position: absolute;
+    height: 30px;
+    background: #a29a98;
+    width: 1px;
+    left: 0;
+    top: 0;
+}
+
+.banner-home .owl-carousel .item h2{
+    text-align: center;
+    color: #fff;
+    font-size: 110px;
+    font-family: 'back_to_black_demoregular';
+    line-height: normal;
+}
+
+.banner-home .owl-carousel .item .text-slider{
+    font-size: 280px;
+    color: #fff;
+    font-family: 'back_to_black_demoregular';
+    text-align: center;
+    margin-top: -72px;
+}
+
+
+
+.owl-carousel{
+    position: relative;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+/*
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot
+{
+*/  
+    position: absolute;
+    right: 0;
+    padding:inherit; 
+    bottom: 500px;
+  
+    
+/*
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+*/
+
+}
+
+/*banner-home*/
+
+.owl-carousel .owl-nav button.owl-next:hover{
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover{
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    
+}
+.owl-carousel .owl-nav button.owl-prev {
+/*
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot
+{
+*/
+    position: absolute;
+    left: 0;
+    padding:inherit; 
+    bottom: 500px;
+    
+/*
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+*/
+
+}
+
+/*banner-home*/
+
+/*block2*/
+
+.block2{
+    padding: 100px 0px;
+    padding-top: 900px;
+}
+
+.block2 h1{
+   font-size: 36px;
+    color: #333333;
+    line-height: 49px;
+    font-family: 'vidaloka_regular';
+    text-align: center;
+    margin-bottom: 100px;
+}
+.block2 h1 a{
+    color: #ffeb3b;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.block2 h1 a:hover{
+    text-decoration: none;
+}
+/*block2*/
+
+
+.box2_block{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.icon_box2{
+    margin-right: 32px;
+}
+
+.icon_box2 i{
+    color: #bfbfbf;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.content_box2{
+    border-left: solid 1px #bfbfbf;
+    padding-left: 30px;
+}
+
+.content_box2 .title_box2{
+    font-size: 15px;
+    color: #313131;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.content_box2 .text_box2{
+    font-size: 13px;
+    color: #969595;
+    line-height: 25px;
+}
+
+.box2_block:hover .icon_box2 i{
+    color: #ebd936;
+}
+
+/*______________________ BLOCK-3 __________________________________________*/
+
+
+.block3 {
+    min-height: 300px;
+    background: url(/L21_project/pic/bg10.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3 h4 {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'vidaloka_regular';
+}
+
+.block3 .instrument-icon i{
+    color: #ffeb3b;
+    font-size: 50px;
+
+}
+
+
+.icon_box3 {
+    width: 44px;
+    height: 44px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block3 p {
+    color: #ffeb3b;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+/*______________________ BLOCK-3 __________________________________________*/
+
+
+
+/*______________________ BLOCK-4 __________________________________________*/
+
+.block4{
+   padding: 100px 0px;  
+}
+.block4 h2{
+    font-size: 36px;
+    font-family: 'vidaloka_regular';
+    text-align: center;
+    margin-bottom: 35px;
+}
+.block4 .text_block4{
+   text-align: center;
+    font-size: 16px;
+    color: #969595;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.block4 .nav-tabs{
+    border-bottom: inherit;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.block4 .nav-tabs li{
+    margin-right: 10px;
+}
+
+.block4 .nav-tabs li a:hover,
+.block4 .nav-tabs li a.active{  /*For active tab button*/
+   color: #181a1f;
+    font-size: 14px;
+    border-color: inherit;
+    background-color: #ffda00;
+    border: solid 2px transparent;
+}
+
+.block4 .nav-tabs li a{
+    color: #181a1f;
+    font-size: 14px;
+    border-color: inherit;
+    background-color: #fff;
+    border: solid 2px #ffda00;
+    padding: 10px 35px;
+}
+
+.block4 .nav-tabs .nav-link{
+/*    border: 1px solid transparent;*/
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.img_galery1{
+    max-width: 500px;
+    width: 25%;
+}
+
+.img_galery{
+/*float: left;    */
+    position: relative;
+    transition: 0.3s;
+}
+
+.img_galery .hover_galery{
+    display: none;
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(251, 221, 47, 0.8);
+    padding: 50px 30px 50px 30px;
+}
+
+.galery_home{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/*
+
+.img_galery1{
+    width: 30%;
+}
+*/
+
+.img_galery2{
+    display: flex;
+}
+
+.img_galery img{
+    width: 100%;
+}
+
+.img_galery3{
+    display: flex;
+}
+
+.galery_wrapper{
+    width: 75%;
+}
+
+.img_galery_box1{      /* на расширение 1280 */
+    height: 608px;     /* on my - 900px;*/ 
+}
+
+.img_galery_box1 img{
+    width: 100%;
+    height: 87%;       /* try to setup 87 % ))) */
+    object-fit: cover;
+}
+
+/*______________________ Жолтый фон с текстом при наведении ____________________*/
+
+.title_galery{
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'vidaloka_regular';
+}
+
+.text_galery{
+    max-height: 60px;
+    font-size: 15px;
+    color: #434242;
+    line-height: 19px;
+    overflow: hidden;
+}
+
+.btn_galery{
+    display: block;
+    color: #181a1f;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid #000;
+    padding: 6px 15px;
+    width: 156px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.btn_galery:hover{   ???????
+    text-decoration: none;
+    color: #181a1f;
+    opacity: 0.7;
+}
+
+.img_galery:hover .hover_galery{
+    display: block;
+}
+
+/*-------------------- second ----------------------------------*/
+
+.title_galery.second{
+    color: #434242;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'vidaloka_regular';
+}
+
+.text_galery.second_text{
+    font-size: 15px;
+    color: #434242;
+    line-height: 15px;
+}
+
+.btn_galery.second_btn{
+    display: block;
+    color: #181a1f;
+    font-size: 16px;
+    text-decoration: underline;
+    transition: 0.3s;
+    border: 2px solid #000;
+    padding: 6px 15px;
+    width: 156px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_galery:hover{  
+    text-decoration: none;
+    color: rgb(255, 0, 39);
+}
+
+.img_galery:hover .hover_galery{
+    display: block;
+}
+/*
+
+.img_galery.img_galery_box1:hover{
+    width: 100%;
+    max-height: 87%;
+    object-fit: cover;
+}
+*/
+/*______________________ Жолтый фон с текстом при наведении ____________________*/
+
+
+
+/*______________________ BLOCK-4 __________________________________________*/
+
+
+
+/*______________________ BLOCK-5__________________________________________*/
+
+.block5 {
+    
+}
+
+.block5 h2 {
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    font-family: 'vidaloka_regular';
+    margin-bottom: 42px;
+
+}
+
+.text_block5 {
+    max-width: 747px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 127px;
+    color: #9d9c9c;
+}
+
+.block5 .color_box {
+    width: 30%;                /*width: 30%; попробоватьт через проценты   */ 
+    height: 300px;
+    background: #ff0027;
+    margin: 10px;
+    justify-content:space-between;
+}
+
+.block5 .color_box:nth-child(1){
+    background: #ff5252;
+}
+
+.block5 .color_box:nth-child(2){
+    background: #4caf50;
+}
+
+.block5 .color_box:nth-child(3){
+    background: #673ab7;
+}
+
+.block5 .color_box.second:nth-child(1){
+    background: #2196f3;
+}
+
+.block5 .color_box.second:nth-child(2){
+    background: #ffeb3b;
+}
+/*
+
+.block5 .color_box.second .color_box_info:nth-child(2){
+    color: darkgreen;
+}
+*/
+
+.block5 .color_box.second:nth-child(3){
+    background: #00bcd4;
+}
+
+.color_box_wrap{
+    display: flex; 
+}
+
+.color_box_wrap .second{
+    margin-bottom: 150px;
+}
+
+.color_box.second .color_box_info:nth-child(2){
+   color: darkred;
+}
+
+.color_box .color_box_info{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'vidaloka_regular';
+}
+
+/*
+.color_box.second .color_box_info{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'vidaloka_regular';
+}
+*/
+
+.color_box_text{
+    margin: 0 auto;
+    font-size: 13px;
+    color: #ffdada;
+    text-align: center;
+    max-width: 294px;
+    padding-bottom: 45px;
+}
+
+.btn_color{
+    display: block;
+    text-align: center;
+    color: #ffcc40;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn_color:hover{
+    color: #332f0c;
+    text-decoration: none;
+    
+}
+
+.color_box.second .color_box_info_bich{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'vidaloka_regular';
+}
+
+.color_box.second .color_box_text_bich{
+    margin: 0 auto;
+    font-size: 13px;
+    color: #332f0c;
+    text-align: center;
+    max-width: 294px;
+    padding-bottom: 45px;
+}
+    
+ 
+.btn_color_bich{
+    display: block;
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn_color_bich:hover{
+    color: #ff0000;
+    text-decoration: none;
+    
+}
+   
+
+
+
+
+
+
+
+
+/*______________________ BLOCK-5__________________________________________*/
+
+
+/*______________________ BLOCK-6__________________________________________*/
+
+.block6{
+    background: url(/L21_project/pic/bg11.png);
+}
+
+.block6 .client{
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'vidaloka_regular';
+    padding-top: 125px;
+}
+
+.block6 .client_text{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'vidaloka_regular';
+    padding-top: 50px;
+    margin-bottom: 150px;
+    
+}
+
+.owl-carousel {
+    padding-bottom: 120px;
+}
+
+.item2{
+    margin: 0 50px;
+}
+   
+
+/*______________________ BLOCK-6__________________________________________*/
+
+
+
+/*______________________ BLOCK-7__________________________________________*/
+
+
+.our_team{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.our_team h3{
+    padding-top: 130px;
+    font-family: 'vidaloka_regular';
+    color: #333333;
+    font-size: 51px;
+    padding-bottom: 57px;
+}
+
+.our_team p{
+    color: #969595;
+    font-size: 16px;
+    
+}
+
+.main_team{
+    display: flex;
+    padding-bottom: 145px;
+}
+
+.team_wrapper{
+    margin: 0 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    border: 2px solid #f1f1f1;
+
+}
+
+.team_text{
+    width: 250px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border-bottom: 2px solid #f1f1f1;
+    
+}
+
+.team_wrapper .team_text h4{
+    font-size: 16px;
+    color: #313131;
+    padding: 25px;
+    
+}
+
+.team_wrapper .team_text p{
+    color: #969595;
+    font-size: 13px;
+    
+}
+
+.team_wrapper i{
+    color: #dadada;
+    padding: 20px 8px;
+}
+
+.team_wrapper i:hover{
+    color: #ffeb3b;
+}
+
+/*______________________ BLOCK-7__________________________________________*/
+
+
+/*______________________ BLOCK-8__________________________________________*/
+
+.block8{
+    background: url(../pic/bg3.jpg);
+}
+
+.forms_second{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.forms_second h2{
+    color: #ffffff;
+    font-size: 61px;
+    font-family: 'vidaloka_regular';
+    padding-top: 150px;
+}
+
+.forms_second p {
+    color: #969595;
+    font-size: 16px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+input{
+    background: #5c5f66;
+    opacity: 0.9;
+    left: 0;
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+    color: aliceblue;
+    display: inline-block;
+    font-weight: bolder;
+
+}
+
+button{
+    background: yellow;
+/*    height: 50px;*/
+    padding: 11px 50px; 
+    font-weight:bold;
+    display: inline-block;
+}
+
+button:hover{
+    background: #b1b100;
+    color: #ff000a;
+}
+
+/*______________________ BLOCK-8__________________________________________*/
+
+
+
+/*______________________ footer__________________________________________*/
+
+.footer{
+    background: url(../pic/bg_footer.jpg);
+}
+
+.footer-center{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.footer-center h3{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'vidaloka_regular';
+    padding-top: 38px;
+}
+
+.logo_footer{
+    margin-top: 50px;
+}
+
+.icon_footer i{
+    color: #dadada;
+    padding: 20px 8px;
+}
+
+.icon_footer i:hover{
+    color: #ffeb3b;
+}
+
+.footer-center .footer_link:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+
+
+/*______________________ footer__________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
